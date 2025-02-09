@@ -1,0 +1,13 @@
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/NotificationApplication.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/config/RestTemplateConfig.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/controller/NotificationController.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/dto/RequestSendEmail.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/exceptions/SendEmailException.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/exceptions/UserNotFoundException.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/model/Notification.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/model/UserDto.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/repository/NotificationRepository.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/response/ResponseApi.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/service/INotificationService.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/service/NotificationService.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-notification/src/main/java/com/cloud/service/UserService.java

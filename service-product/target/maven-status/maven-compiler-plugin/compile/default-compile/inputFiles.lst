@@ -1,0 +1,16 @@
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/Productapplication.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/config/RestTemplateConfig.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/controller/ProductController.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/exceptions/CreateProductException.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/exceptions/DeleteProductException.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/exceptions/GetProductException.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/exceptions/ProductNotFoundException.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/exceptions/UpdateProductException.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/model/Imagine.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/model/Product.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/repository/ImagineRepository.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/repository/ProductRepository.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/response/ResponseApi.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/service/IProductService.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/service/InventoryService.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-product/src/main/java/com/cloud/service/ProductService.java

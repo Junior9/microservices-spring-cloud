@@ -1,0 +1,7 @@
+/Users/franciscomoraes/Documents/workspace/microservices/service-user/src/main/java/com/cloud/UserApplication.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-user/src/main/java/com/cloud/controller/UserController.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-user/src/main/java/com/cloud/model/UserEntity.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-user/src/main/java/com/cloud/repository/UserRepository.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-user/src/main/java/com/cloud/response/ResponseApi.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-user/src/main/java/com/cloud/service/IUserService.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-user/src/main/java/com/cloud/service/UserService.java

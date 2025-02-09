@@ -1,0 +1,12 @@
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/Inventoryapplication.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/controller/InventoryController.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/exceptions/CreateProductException.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/exceptions/DeleteProductexception.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/exceptions/GetProductException.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/exceptions/ProductNoFoundException.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/exceptions/UpdateProductException.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/model/ProductInventory.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/repository/InventoryRepository.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/response/ResponseApi.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/service/IInventoreyService.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-inventory/src/main/java/com/cloud/service/InventoryService.java

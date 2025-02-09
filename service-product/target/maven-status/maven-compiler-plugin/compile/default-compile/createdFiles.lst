@@ -1,0 +1,17 @@
+com/cloud/response/ResponseApi.class
+com/cloud/service/InventoryService.class
+com/cloud/exceptions/GetProductException.class
+com/cloud/service/ProductService.class
+com/cloud/service/IProductService.class
+com/cloud/exceptions/ProductNotFoundException.class
+com/cloud/exceptions/UpdateProductException.class
+com/cloud/exceptions/CreateProductException.class
+com/cloud/config/RestTemplateConfig.class
+com/cloud/model/Imagine.class
+com/cloud/exceptions/DeleteProductException.class
+com/cloud/response/ResponseApi$ResponseApiBuilder.class
+com/cloud/repository/ProductRepository.class
+com/cloud/repository/ImagineRepository.class
+com/cloud/controller/ProductController.class
+com/cloud/Productapplication.class
+com/cloud/model/Product.class
