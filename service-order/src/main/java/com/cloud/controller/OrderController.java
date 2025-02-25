@@ -33,7 +33,7 @@ public class OrderController {
         try {
             Optional<Order> orderOp = this.orderService.create(orderDto);
             return ResponseEntity.status(HttpStatus.CREATED)
-                .body(ResponseApi.builder().message("Succcess").data(orderOp.get()).build());
+                .body(ResponseApi.builder().message("Success").data(orderOp.get()).build());
 
         } catch (Exception error) {
             return ResponseEntity.status(HttpStatus.OK)
@@ -46,11 +46,25 @@ public class OrderController {
         try {
             Optional<Order> orderOp = this.orderService.updateStatus(id, statusOrder);
             return ResponseEntity.status(HttpStatus.CREATED)
-                .body(ResponseApi.builder().message("Succcess").data(orderOp.get()).build());
+                .body(ResponseApi.builder().message("Success").data(orderOp.get()).build());
 
         } catch (Exception error) {
             return ResponseEntity.status(HttpStatus.OK)
                 .body(ResponseApi.builder().message("Error to update order " + error.getMessage()).build());
+        }
+    }
+
+
+    @GetMapping("id/{id}")
+    public ResponseEntity<ResponseApi> getById(@PathVariable Long id){
+        try {
+            Optional<Order> ordersOp = this.orderService.getOrdersById(id);
+            return ResponseEntity.status(HttpStatus.CREATED)
+                .body(ResponseApi.builder().message("Success").data(ordersOp.get()).build());
+
+        } catch (Exception error) {
+            return ResponseEntity.status(HttpStatus.OK)
+                .body(ResponseApi.builder().message("Error to get order by id :" + error.getMessage()).build());
         }
     }
 
@@ -59,11 +73,11 @@ public class OrderController {
         try {
             Optional<List<Order>> ordersOp = this.orderService.getOrdersByUserId(userId);
             return ResponseEntity.status(HttpStatus.CREATED)
-                .body(ResponseApi.builder().message("Succcess").data(ordersOp.get()).build());
+                .body(ResponseApi.builder().message("Success").data(ordersOp.get()).build());
 
         } catch (Exception error) {
             return ResponseEntity.status(HttpStatus.OK)
-                .body(ResponseApi.builder().message("Error to get orders by uiser id :" + error.getMessage()).build());
+                .body(ResponseApi.builder().message("Error to get orders by user id :" + error.getMessage()).build());
         }
     }
 
@@ -72,7 +86,7 @@ public class OrderController {
         try {
             Optional<List<Order>> ordersOp = this.orderService.all();
             return ResponseEntity.status(HttpStatus.CREATED)
-                .body(ResponseApi.builder().message("Succcess").data(ordersOp.get()).build());
+                .body(ResponseApi.builder().message("Success").data(ordersOp.get()).build());
 
         } catch (Exception error) {
             return ResponseEntity.status(HttpStatus.OK)

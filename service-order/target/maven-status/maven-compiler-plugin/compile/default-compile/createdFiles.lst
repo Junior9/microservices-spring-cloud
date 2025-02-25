@@ -10,9 +10,12 @@ com/cloud/exceptions/UpdateException.class
 com/cloud/dto/SendEmailDto$SendEmailDtoBuilder.class
 com/cloud/model/Product.class
 com/cloud/service/IOrderService.class
+com/cloud/config/KafkaConfig.class
 com/cloud/service/OrderService.class
 com/cloud/exceptions/OrderInvalidatedException.class
 com/cloud/dto/OrderDto.class
+com/cloud/dto/OrderDtoKafka.class
+com/cloud/dto/OrderDtoKafka$OrderDtoKafkaBuilder.class
 com/cloud/dto/SendEmailDto.class
 com/cloud/repository/OrderRepository.class
 com/cloud/response/ResponseApi$ResponseApiBuilder.class

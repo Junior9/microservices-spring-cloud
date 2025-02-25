@@ -1,7 +1,9 @@
 /Users/franciscomoraes/Documents/workspace/microservices/service-order/src/main/java/com/cloud/OrderApplication.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-order/src/main/java/com/cloud/config/KafkaConfig.java
 /Users/franciscomoraes/Documents/workspace/microservices/service-order/src/main/java/com/cloud/config/RestTemplateConfig.java
 /Users/franciscomoraes/Documents/workspace/microservices/service-order/src/main/java/com/cloud/controller/OrderController.java
 /Users/franciscomoraes/Documents/workspace/microservices/service-order/src/main/java/com/cloud/dto/OrderDto.java
+/Users/franciscomoraes/Documents/workspace/microservices/service-order/src/main/java/com/cloud/dto/OrderDtoKafka.java
 /Users/franciscomoraes/Documents/workspace/microservices/service-order/src/main/java/com/cloud/dto/ProductOrder.java
 /Users/franciscomoraes/Documents/workspace/microservices/service-order/src/main/java/com/cloud/dto/SendEmailDto.java
 /Users/franciscomoraes/Documents/workspace/microservices/service-order/src/main/java/com/cloud/enums/StatusOrder.java

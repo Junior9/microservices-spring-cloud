@@ -12,6 +12,7 @@ public interface IOrderService {
     public Optional<Order> create(OrderDto order);
     public Optional<Order> updateStatus(Long orderId, StatusOrder statusOrder);
     public Optional<List<Order>> getOrdersByUserId(Long id);
+    public Optional<Order> getOrdersById(Long id);
     public Optional<List<Order>> all();
     public Order convertDtoToOrder(OrderDto orderdto);
 }

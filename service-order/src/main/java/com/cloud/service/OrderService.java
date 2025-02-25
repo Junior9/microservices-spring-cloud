@@ -6,12 +6,16 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-import org.springframework.cloud.client.circuitbreaker.CircuitBreaker;
-import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
+
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.kafka.support.KafkaHeaders;
+import org.springframework.messaging.Message;
+import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.cloud.dto.OrderDto;
+import com.cloud.dto.OrderDtoKafka;
 import com.cloud.enums.StatusOrder;
 import com.cloud.exceptions.ConvertDtoException;
 import com.cloud.exceptions.CreateException;
@@ -33,6 +37,7 @@ public class OrderService implements IOrderService{
     private final UserService userService;
     private final InventoryService inventoryService;
     private final NotificationService notificationService;
+    private final KafkaTemplate<String,String> kafkaTemplate;
 
     @Override
     @Transactional
@@ -66,7 +71,16 @@ public class OrderService implements IOrderService{
                     orderDto.getProducts().stream()
                         .forEach(p -> this.inventoryService.decreaseInventoryProductQuantity(p.getProductId(), p.getQuantity()));
 
-                    this.notificationService.createNotification(order.getUserId());
+
+                    //Kafka
+                    //this.notificationService.createNotification(order.getUserId());
+                    OrderDtoKafka orderKafka = OrderDtoKafka.builder().userId(orderDto.getUserId()).orderId(order.getId()).build();
+
+                    Message<OrderDtoKafka> messagekafka = MessageBuilder.withPayload(orderKafka).setHeader(KafkaHeaders.TOPIC, "orders").build();
+                    this.kafkaTemplate.send(messagekafka);
+
+                    //this.kafkaTemplate.send("orders", "New order for the user id " + order.getUserId());
+
                     return Optional.of(orederAdded);
                 }else{
                     throw new OrderInvalidatedException("Bad order");
@@ -83,6 +97,16 @@ public class OrderService implements IOrderService{
     public Optional<List<Order>> getOrdersByUserId(Long id) {
         try {
             Optional<List<Order>> ordersOp = this.orderRepository.findByUserId(id);
+            return ordersOp;
+        } catch (Exception error) {
+            throw new GetException("Error to get order -> " + error.getMessage());
+        }
+    }
+
+    @Override
+    public Optional<Order> getOrdersById(Long id) {
+        try {
+            Optional<Order> ordersOp = this.orderRepository.findById(id);
             return ordersOp;
         } catch (Exception error) {
             throw new GetException("Error to get order -> " + error.getMessage());
